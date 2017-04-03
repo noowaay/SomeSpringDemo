@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface GreetingClient extends GreetingController {
     @Component
     public static class GreetingClientFallback implements GreetingClient {
-        @Override
+        //@Override
         public String greeting(@PathVariable("username") String username) {
             return "Hello User!";
         }
